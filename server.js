@@ -14,10 +14,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/aboutschool',function(req,res){
-    res.sendFile(path.join(__dirname,"aboutschool.html"));
+    res.sendFile(path.join(__dirname,'aboutschool.html'));
 });
 app.get('/ac',function(req, res){
-    res.sendFile(path.join("ac.html"));
+    res.sendFile(path.join(__dirname,'ui','ac.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
