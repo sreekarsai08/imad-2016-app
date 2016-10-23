@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
 app.get('/aboutschool',function(req,res){
     res.sendFile(path.join(__dirname,"aboutschool.html"));
 });
-app.get('/acadamics',function(req,res){
-    res.sendFile(path.join(__dirname,"acadamics.html"));
+app.get('/ac',function(req,res){
+    res.sendFile(path.join(__dirname,"ac.html"));
 });
 
 app.get('/ui/style.css', function (req, res) {
