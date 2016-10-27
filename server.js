@@ -29,10 +29,6 @@ app.get('/schoollife', function (req, res) {
 app.get('/trans', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'trans.html'));
 });
-app.get('/:profileName', function (req, res) {
-var profileName= req.params.profileName;
-res.send(templete(profiles[profileName]));
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
